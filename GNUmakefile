@@ -252,7 +252,7 @@ handin-check:
 		test "$$r" = y; \
 	fi
 
-UPSTREAM := $(shell git remote -v | grep "pdos.csail.mit.edu/6.828/2018/jos.git (fetch)" | awk '{split($$0,a," "); print a[1]}')
+UPSTREAM := $(shell git remote -v | grep "git@github.com:pedagand/jos.git (fetch)" | awk '{split($$0,a," "); print a[1]}')
 
 tarball-pref: handin-check
 	@SUF=$(LAB); \
